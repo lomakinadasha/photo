@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Компліменти</title>
+	<style type="text/css">
+		body{
+			background-color: lightpink;
+			color: deeppink;
+			font-size: 50px;
+			font-family: 'Rubik Bubbles';
+			font-weight: 600;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+    <script type="text/javascript">
+
+
+    	let compliments=['smart', 'brave', 'wise', 'polite', 'patient', 'kind', 'gorgeous', 'genius', 'inspiring', 'dirty', 'awesome', 'cultural', 'active', 'bold', 'calm'];
+    	let animals=['monkeys', 'dogs', 'lions', 'dolphins', 'cats', 'hamsters', 'panthers', 'eagle', 'swan', 'bears', 'foxes', 'squirrels', 'frogs', 'wolves', 'worms'];
+    	let rand=Math.floor(Math.random()*compliments.length);
+        let number=prompt("Скільки ви хочете почути сьогодні компліментів?",100)
+    	for(let i=1; i<=number; i++) {
+    	document.write("You are so " + compliments[rand]+" as " +animals[rand]+ " :)" + "<br>");
+    	}
+    </script>
+    	<marquee scrollamount="10" style=" background-color: lightpink; font -size: 45px; width: 250px: height: 200px; "direction="down" behavior="alternate"><marquee behavior="alternate" ><img src="https://i.pinimg.com/564x/73/08/6d/73086de70c6eab4ba69cc4a86a8cf6b1.jpg"></marquee></marquee>
+
+
+
+</body>
+</html>

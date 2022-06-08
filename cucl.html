@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Циклічність</title>
+	<style type="text/css">
+		body{
+			color: papayawhip;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		 alert("Виберіть діапазон");
+        let max=prompt('Введіть мінімум',0);
+        let min=prompt('Введіть максимум',100);
+        let numX = Math.floor (min+ Math.random()*( max + 1 - min));
+        let numUser;
+		let attempt=prompt("Скільки хочете спроб?",5)
+		let count=0;
+       
+
+		do { numUser = prompt( "Ваше число сгенеровано, вгадайте!", 0);
+		count++;
+		if (isNaN(numUser)) {
+	    	alert("Помилка!");
+}
+	    if (numUser == null) {
+	    	alert(" Ви прощаєтесь з нами? ");
+	    } else if(+numUser<numX){
+	    	alert(" Ваше число менше ");
+	    } else if(+numUser>numX){
+	    	alert(" Ваше число більше ");
+	    } else if (+numUser==numX){
+	    	alert("Вітаю! Число вгадане! " +numX+ " за спроб " +count++);} 
+	    } while (numUser != numX && numUser != null&&count<=attempt);
+
+	  
+	</script>
+
+
+</body>
+</html>
